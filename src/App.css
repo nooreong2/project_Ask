@@ -1,38 +1,69 @@
-.App {
-  text-align: center;
+
+.logo{
+    background-image: url("/public/PASNET.png");
+    width:500px;
+    height:500px;
+    background-size:500px 500px;
+    background-repeat: no-repeat;
+}
+.total_login{
+    text-align: center;
+    font-size:30px;
+    margin-top: 30px;
+}
+.social_login{
+    width:200px;
+    margin:30px auto 5px auto;
+}
+.social_login button{
+    justify-content: center;
+    width:200px;
+    margin-top: 10px;
+    display:flex;
+    align-items: center ;
+    padding:5px;
+    border:1px solid #d8d8d8;
+    color:white;
+    font-size:15px;
+    font-weight: bold;
+}
+.social_login button:nth-child(1){
+    margin-top:0px;
+    background: #2db400;
+}
+.social_login button:nth-child(2){
+    background: #F9E000;
+    color:black;
+}
+.social_login button:nth-child(3){
+    background: #333;
+}
+.icon{
+    display:block;
+    width:20px;
+    height:15px;
+    margin-right:5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.input-container {
+    width: 200px;
+    margin: 30px auto 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input {
+    width: 200px;
+    height: 30px;
+    border: 1px solid #d8d8d8;
+    border-radius: 6px;
+    padding-left: 7px;
+    box-sizing: border-box;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+input::placeholder {
+    font-size: 10px;
+    color: #999999;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input-password {
+    margin-top: 8px;
 }
